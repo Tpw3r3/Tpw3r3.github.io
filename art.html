@@ -23,13 +23,13 @@
             <div class="w3-bar w3-purple w3-card w3-left-align w3-large">
                 <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
                     href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-                <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-                <a href="art.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Art</a>
+                <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+                <a href="art.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Art</a>
                 <a href="cs.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CS</a>
             </div>
         
             <!-- Navbar on small screens -->
-            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <div id="navSmall" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
                 <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
                 <a href="art.html" class="w3-bar-item w3-button w3-padding-large">Art</a>
                 <a href="cs.html" class="w3-bar-item w3-button w3-padding-large">CS</a>
@@ -53,42 +53,59 @@
 
             <!-- Photo grid -->
             <div class="gallery">
-                <div class="gallery-item"><img src="./Assets/images/Manifesto Project/LiveInTheMoment(Screenshot-1).png" style="width:100%" onclick="onClick(this)"
-                    alt="Live in the moment poster made in Adobe Illustrator. Graphic design manifesto project"></div>
-                <div class="gallery-item"><img src="./Assets/images/Lines.JPG" style="width:100%" onclick="onClick(this)"
-                    alt="Random shape with contained lines made in Procreate"></div>
-                <div class="gallery-item"><img src="./Assets/images/FullLines.JPG" style="width:100%" onclick="onClick(this)"
-                    alt="Colorful lines made in Procreate"></div>
-                <div class="gallery-item"><img src="./Assets/images/ExplodingLoveCrop.JPG" style="width:100%" onclick="onClick(this)"
-                    alt="Exploding love made in Procreate"></div>
-                <div class="gallery-item"><img src="./Assets/images/Butterfly Gifs/Butterfly-1.GIF" style="width:100%" onclick="onClick(this)"
-                    alt="Animated butterfly gifs made in Procreate" loading="lazy"></div>
-                <div class="gallery-item"><img src="./Assets/images/LiquidSunset.JPG" style="width:100%" onclick="onClick(this)"
-                    alt="Liquid sunset made in Procreate" loading="lazy"></div>
-                <div class="gallery-item"><img src="./Assets/images/Textures/Texture-Dark.PNG" style="width:100%" onclick="onClick(this)"
-                    alt="Textures made in Art Set 4 on iPad" loading="lazy"></div>
-                <div class="gallery-item"><img src="./Assets/images/Textures/Texture-Flames.jpg" style="width:100%"onclick="onClick(this)" 
-                    alt="Flame texture made in Procreate" loading="lazy"></div>
-                <div class="gallery-item"><img src="./Assets/images/You Love.JPG" style="width:100%" onclick="onClick(this)"
-                    alt="Do what you love made in Procreate. Could be a poster, wallpaper, or cover" loading="lazy"></div>
-                <div class="gallery-item"><img src="./Assets/images/Extinct Infographic/Time-Alone.jpg" style="width:100%" onclick="onClick(this)"
-                    alt="Infographic on animals becoming extinct made in Adobe Illustrator. Graphic design project" loading="lazy"></div>
-                <div class="gallery-item"><img src="./Assets/images/Viruses-01.jpg" style="width:100%" onclick="onClick(this)"
-                    alt="Virus wrapping around a heart made in Adobe Illustrator. Graphic design project" loading="lazy"></div>
-                <div class="gallery-item"><img src="./Assets/images/Bag Project.jpg" style="width:100%" onclick="onClick(this)"
-                    alt="Geometric bag made in Adobe Illustrator. Graphic design project" loading="lazy"></div>
+                <div class="gallery-item"><img
+                        src="./Assets/images/Manifesto Project/LiveInTheMoment(Screenshot-1).png"
+                        style="width:100%" class="gallery-img" data-group="single"
+                        alt="Live in the moment poster made in Adobe Illustrator. Graphic design manifesto project"></div>
+                <div class="gallery-item"><img src="./Assets/images/Lines.JPG" style="width:100%"
+                        class="gallery-img" data-group="single" alt="Random shape with contained lines made in Procreate"></div>
+                <div class="gallery-item"><img src="./Assets/images/FullLines.JPG" style="width:100%"
+                        class="gallery-img" data-group="single" alt="Colorful lines made in Procreate"></div>
+                <div class="gallery-item"><img src="./Assets/images/ExplodingLoveCrop.JPG" style="width:100%"
+                        class="gallery-img" data-group="single" alt="Exploding love made in Procreate"></div>
+                <div class="gallery-item">
+                    <img src="./Assets/images/Butterfly Gifs/Butterfly-1.GIF" style="width:100%"
+                        class="gallery-img" data-group="project1" alt="Animated butterfly gifs made in Procreate">
+                    <img src="./Assets/images/Butterfly Gifs/Butterfly-2.GIF" style="width:100%"
+                        class="gallery-img" data-group="project1" alt="Animated butterfly gifs made in Procreate">
+                    <img src="./Assets/images/Butterfly Gifs/Butterfly-3.GIF" style="width:100%"
+                        class="gallery-img" data-group="project1" alt="Animated butterfly gifs made in Procreate">
+                </div>
+                <div class="gallery-item"><img src="./Assets/images/LiquidSunset.JPG" style="width:100%"
+                        class="gallery-img" data-group="single" alt="Liquid sunset made in Procreate"></div>
+                <div class="gallery-item"><img src="./Assets/images/Textures/Texture-Dark.PNG" style="width:100%"
+                        class="gallery-img" data-group="single" alt="Textures made in Art Set 4 on iPad"></div>
+                <div class="gallery-item"><img src="./Assets/images/Textures/Texture-Flames.jpg" style="width:100%"
+                        class="gallery-img" data-group="single" alt="Flame texture made in Procreate"></div>
+                <div class="gallery-item"><img src="./Assets/images/You Love.JPG" style="width:100%"
+                        class="gallery-img" data-group="single"
+                        alt="Do what you love made in Procreate. Could be a poster, wallpaper, or cover" loading="lazy"></div>
+                <div class="gallery-item"><img src="./Assets/images/Extinct Infographic/Time-Alone.jpg"
+                        style="width:100%" class="gallery-img" data-group="single"
+                        alt="Infographic on animals becoming extinct made in Adobe Illustrator. Graphic design project"
+                        loading="lazy">
+                </div>
+                <div class="gallery-item"><img src="./Assets/images/Viruses-01.jpg" style="width:100%"
+                        class="gallery-img" data-group="single"
+                        alt="Virus wrapping around a heart made in Adobe Illustrator. Graphic design project" loading="lazy"></div>
+                <div class="gallery-item"><img src="./Assets/images/Bag Project.jpg" style="width:100%"
+                        class="gallery-img" data-group="single"
+                        alt="Geometric bag made in Adobe Illustrator. Graphic design project" loading="lazy"></div>
             </div>
 
             <!-- !PAGE CONTENT! -->
             <div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
             
                 <!-- Modal for full size images on click-->
-                <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-                    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+                <div id="modal01" class="w3-modal w3-black" style="padding-top:0">
+                    <!-- <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span> -->
+                    <span class="close w3-button w3-black w3-display-topright">&times;</span>
+                    <button class="prev">&#10094;</button>
                     <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-                        <img id="img01" class="w3-image gallery-item modal-image">
+                        <img id="modalImage" class="w3-image gallery-item modal-image">
                         <p id="caption"></p>
                     </div>
+                    <button class="next">&#10095;</button>
                 </div>
             </div>
         </main>
@@ -97,7 +114,7 @@
     <script>
         // Used to toggle the menu on small screens when clicking on the menu button
         function myFunction() {
-            var x = document.getElementById("navDemo");
+            var x = document.getElementById("navSmall");
             if (x.className.indexOf("w3-show") == -1) {
                 x.className += " w3-show";
             } else {
@@ -106,11 +123,62 @@
         }
 
         // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
+        const modal = document.getElementById("modal01");
+        const modalImg = document.getElementById("modalImage");
+        const images = document.querySelectorAll(".gallery-img");
+        var captionText = document.getElementById("caption");
+
+        const closeBtn = document.querySelector(".close");
+        const prevBtn = document.querySelector(".prev");
+        const nextBtn = document.querySelector(".next");
+
+        let currentGroup = [];
+        let currentIndex = 0;
+        
+        images.forEach(img => {
+            img.addEventListener("click", () => {
+                const groupName = img.dataset.group;
+
+                // Get all images in same group
+                currentGroup = [...document.querySelectorAll(`img[data-group="${groupName}"]`)];
+
+                // Find index of clicked image
+                currentIndex = currentGroup.indexOf(img);
+
+                showImage();
+                captionText.innerHTML = img.alt;
+
+                modal.style.display = "block";
+
+                // Hide arrows if single image
+                if (currentGroup.length === 1 || groupName === "single") {
+                    prevBtn.style.display = "none";
+                    nextBtn.style.display = "none";
+                } else {
+                    prevBtn.style.display = "block";
+                    nextBtn.style.display = "block";
+                }
+            });
+        });
+
+        function showImage() {
+            modalImg.src = currentGroup[currentIndex].src;
         }
+
+        // Next / Prev
+        document.querySelector(".next").onclick = () => {
+            currentIndex = (currentIndex + 1) % currentGroup.length;
+            showImage();
+        };
+
+        document.querySelector(".prev").onclick = () => {
+            currentIndex = (currentIndex - 1 + currentGroup.length) % currentGroup.length;
+            showImage();
+        };
+
+        // Close
+        document.querySelector(".close").onclick = () => {
+            modal.style.display = "none";
+        };
     </script>
 </html>
