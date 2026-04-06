@@ -110,12 +110,15 @@ main {
     font-size: 40px;
     color: white;
     cursor: pointer;
+    z-index: 60;
 }
 
 .prev {
     left: 20px;
+    z-index: 20;
 }
 
 .next {
     right: 20px;
+    z-index: 10;
 }
