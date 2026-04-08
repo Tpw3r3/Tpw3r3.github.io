@@ -20,5 +20,5 @@ TO DO:
 -Bonus info as captions on projects and images in modal
 
 -Play with other potential styles in stylesheet
--Add in more project images
+✔️-Add in more project images
 -Experiment with slideshow for projects with more images
