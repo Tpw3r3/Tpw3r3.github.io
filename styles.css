@@ -28,6 +28,7 @@ main {
     aspect-ratio: 1 / 1; /* Makes perfect squares */
     border-radius: 12px;
     /* background: linear-gradient(135deg, #667eea, #764ba2); */
+    transition: transform 0.3s ease;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -36,7 +37,6 @@ main {
 .gallery-item img {
     object-fit: contain;
     border-radius: 12px;
-    transition: transform 0.3s ease;
 }
 
 .gallery-item:hover {
