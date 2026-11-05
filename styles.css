@@ -130,3 +130,34 @@ main {
     right: 20px;
     z-index: 10;
 }
+
+.starry-background {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0b0d19;
+    /* Deep space night sky */
+
+    /* Three layers of stars using radial gradients */
+    background-image:
+        radial-gradient(1px 1px at 25px 30px, #ffffff, transparent),
+        radial-gradient(1.5px 1.5px at 75px 130px, #fffbdf, transparent),
+        radial-gradient(2px 2px at 150px 80px, #d2e4ff, transparent);
+
+    /* Defines the grid tile size for each layer to repeat infinitely */
+    background-size: 250px 250px, 350px 350px, 450px 450px;
+
+    /* Smooth animation to loop the positions and create depth */
+    animation: twinkle 60s linear infinite;
+}
+
+/* Animates the background positions to simulate shifting stars */
+@keyframes twinkle {
+    from {
+        background-position: 0 0, 0 0, 0 0;
+    }
+
+    to {
+        /* Moving each grid slightly differently creates a 3D parallax effect */
+        background-position: 250px 500px, -350px 700px, 450px -450px;
+    }
+}
